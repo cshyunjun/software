@@ -7,7 +7,7 @@
 double plus(double x, double y);
 double minus(double x, double y);
 double multiply(double x, double y);
-//int division(int x, int y);
+double division(double x, double y);
 //int remainder(int x, int y);
 void print_menu()
 {
@@ -31,9 +31,9 @@ int main()
 		printf("%.2lf - %.2lf = %.2lf", x, y, minus(x, y));
 	else if (sol == 3)
 		printf("%.2lf * %.2lf = %.2lf", x, y, multiply(x, y));
-	/*else if (sol == 4)
-		printf("%d / %d = %d", x, y, division(x, y));
-	else if (sol == 5)
+	else if (sol == 4)
+		printf("%.2lf / %.2lf = %.2lf", x, y, division(x, y));
+	/*else if (sol == 5)
 		printf("%d %% %d = %d", x, y, remainder(x, y));*/
 }
 double plus(double x, double y)
@@ -54,12 +54,12 @@ double multiply(double x, double y)
 	result = x * y;
 	return result;
 }
-//int division(int x, int y)
-//{
-//	int result;
-//	result = x / y;
-//	return result;
-//}
+double division(double x, double y)
+{
+	double result;
+	result = x / y;
+	return result;
+}
 //int remainder(int x, int y)
 //{
 //	int result;
