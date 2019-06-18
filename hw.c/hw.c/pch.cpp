@@ -5,7 +5,7 @@
 // 일반적으로 이 파일을 무시하지만 미리 컴파일된 헤더를 사용하는 경우 유지합니다.
 #include<stdio.h>
 double plus(double x, double y);
-//int minus(int x, int y);
+double minus(double x, double y);
 //int multiply(int x, int y);
 //int division(int x, int y);
 //int remainder(int x, int y);
@@ -27,9 +27,9 @@ int main()
 	scanf_s("%lf", &y);
 	if (sol == 1)
 		printf("%.2lf + %.2lf = %.2lf", x, y, plus(x, y));
-	/*else if (sol == 2)
-		printf("%d - %d = %d", x, y, minus(x, y));
-	else if (sol == 3)
+	else if (sol == 2)
+		printf("%.2lf - %.2lf = %.2lf", x, y, minus(x, y));
+	/*else if (sol == 3)
 		printf("%d * %d = %d", x, y, multiply(x, y));
 	else if (sol == 4)
 		printf("%d / %d = %d", x, y, division(x, y));
@@ -42,12 +42,12 @@ double plus(double x, double y)
 	result = x + y;
 	return result;
 }
-//int minus(int x, int y)
-//{
-//	int result;
-//	result = x - y;
-//	return result;
-//}
+double minus(double x, double y)
+{
+	double result;
+	result = x - y;
+	return result;
+}
 //int multiply(int x, int y)
 //{
 //	int result;
